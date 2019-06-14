@@ -1,0 +1,33 @@
+#!/bin/bash
+#SBATCH --job-name=NAS-MULTI
+#SBATCH --time=72:00:00
+#SBATCH --partition=hype
+#SBATCH --exclusive
+
+echo "Running on $SLURM_JOB_NODELIST"
+
+if [ $# -lt 2 ]; then
+	echo "Usage : $0 application1 application2"
+	exit 1
+fi
+
+export OMP_NUM_THREADS=20
+
+appA=$1
+appB=$2
+SCRATCH=/scratch/msserpa
+
+cp $appA $SCRATCH/
+cp $appB $SCRATCH/
+
+#./memoryUsage $1
+/usr/bin/time -f %e $SCRATCH/$appA 1> /dev/null 2> $SCRATCH/tmpA.`hostname` &
+/usr/bin/time -f %e $SCRATCH/$appB 1> /dev/null 2> $SCRATCH/tmpB.`hostname` &
+
+wait
+
+TIMEA=`cat $SCRATCH/tmpA.$(hostname)`
+TIMEB=`cat $SCRATCH/tmpB.$(hostname)`
+echo ${appA:0:2},${appA:3:1},$TIMEA,${appB:0:2},${appB:3:1},$TIMEB >> `hostname`.nas.time
+
+echo "done"

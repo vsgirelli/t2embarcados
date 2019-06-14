@@ -1,0 +1,26 @@
+#!/bin/bash
+
+trap ctrl_c INT
+
+function ctrl_c() {
+	printf "\nKilling...\n"
+	kill $!
+	kill $$
+}
+
+if [ $# -lt 1 ]
+then
+	echo "Usage : $0 application"
+	exit 1
+fi
+
+./"$@" &
+
+while [ -f "/proc/$!/status" ]; do
+	R=`grep -s VmPeak /proc/$!/status | awk '{print $2}'`
+	if [ ! -z "$R" ]; then
+		footprint=$R
+	fi
+done
+
+echo $1,$footprint >> `hostname`.nas
