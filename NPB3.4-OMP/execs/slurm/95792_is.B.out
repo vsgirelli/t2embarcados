@@ -1,6 +1,6 @@
 	 Running on draco2 
 
-sex jun 14 16:41:11 -03 2019
+sex jun 14 20:20:08 -03 2019
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
@@ -27,11 +27,11 @@ sex jun 14 16:41:11 -03 2019
  Class           =                        B
  Size            =                 33554432
  Iterations      =                       10
- Time in seconds =                     4.24
+ Time in seconds =                     4.25
  Total threads   =                        1
  Avail threads   =                        1
- Mop/s total     =                    79.09
- Mop/s/thread    =                    79.09
+ Mop/s total     =                    78.94
+ Mop/s/thread    =                    78.94
  Operation type  =              keys ranked
  Verification    =               SUCCESSFUL
  Version         =                      3.4
@@ -52,8 +52,8 @@ sex jun 14 16:41:11 -03 2019
  npb@nas.nasa.gov
 
 
-Tempo de execucao em segundos: 10.12106
-Energia consumida em Joules:   527.66455
+Tempo de execucao em segundos: 10.12266
+Energia consumida em Joules:   532.92059
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
@@ -80,11 +80,11 @@ Energia consumida em Joules:   527.66455
  Class           =                        B
  Size            =                 33554432
  Iterations      =                       10
- Time in seconds =                     2.54
+ Time in seconds =                     2.67
  Total threads   =                        2
  Avail threads   =                        2
- Mop/s total     =                   132.27
- Mop/s/thread    =                    66.14
+ Mop/s total     =                   125.67
+ Mop/s/thread    =                    62.83
  Operation type  =              keys ranked
  Verification    =               SUCCESSFUL
  Version         =                      3.4
@@ -105,8 +105,8 @@ Energia consumida em Joules:   527.66455
  npb@nas.nasa.gov
 
 
-Tempo de execucao em segundos: 10.95265
-Energia consumida em Joules:   347.92402
+Tempo de execucao em segundos: 11.15326
+Energia consumida em Joules:   355.11805
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
@@ -136,8 +136,8 @@ Energia consumida em Joules:   347.92402
  Time in seconds =                     1.34
  Total threads   =                        4
  Avail threads   =                        4
- Mop/s total     =                   249.48
- Mop/s/thread    =                    62.37
+ Mop/s total     =                   250.35
+ Mop/s/thread    =                    62.59
  Operation type  =              keys ranked
  Verification    =               SUCCESSFUL
  Version         =                      3.4
@@ -158,8 +158,8 @@ Energia consumida em Joules:   347.92402
  npb@nas.nasa.gov
 
 
-Tempo de execucao em segundos: 11.57042
-Energia consumida em Joules:   197.23029
+Tempo de execucao em segundos: 11.55493
+Energia consumida em Joules:   197.21435
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
@@ -189,8 +189,8 @@ Energia consumida em Joules:   197.23029
  Time in seconds =                     0.74
  Total threads   =                        8
  Avail threads   =                        8
- Mop/s total     =                   452.79
- Mop/s/thread    =                    56.60
+ Mop/s total     =                   453.66
+ Mop/s/thread    =                    56.71
  Operation type  =              keys ranked
  Verification    =               SUCCESSFUL
  Version         =                      3.4
@@ -211,8 +211,8 @@ Energia consumida em Joules:   197.23029
  npb@nas.nasa.gov
 
 
-Tempo de execucao em segundos: 12.35473
-Energia consumida em Joules:   120.84365
+Tempo de execucao em segundos: 12.32468
+Energia consumida em Joules:   121.10372
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
@@ -239,11 +239,11 @@ Energia consumida em Joules:   120.84365
  Class           =                        B
  Size            =                 33554432
  Iterations      =                       10
- Time in seconds =                     0.40
+ Time in seconds =                     0.39
  Total threads   =                       16
  Avail threads   =                       16
- Mop/s total     =                   848.45
- Mop/s/thread    =                    53.03
+ Mop/s total     =                   850.78
+ Mop/s/thread    =                    53.17
  Operation type  =              keys ranked
  Verification    =               SUCCESSFUL
  Version         =                      3.4
@@ -264,8 +264,8 @@ Energia consumida em Joules:   120.84365
  npb@nas.nasa.gov
 
 
-Tempo de execucao em segundos: 12.99443
-Energia consumida em Joules:   82.50968
+Tempo de execucao em segundos: 12.93941
+Energia consumida em Joules:   82.69226
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
@@ -292,11 +292,11 @@ Energia consumida em Joules:   82.50968
  Class           =                        B
  Size            =                 33554432
  Iterations      =                       10
- Time in seconds =                     0.34
+ Time in seconds =                     0.35
  Total threads   =                       32
  Avail threads   =                       32
- Mop/s total     =                   992.28
- Mop/s/thread    =                    31.01
+ Mop/s total     =                   965.57
+ Mop/s/thread    =                    30.17
  Operation type  =              keys ranked
  Verification    =               SUCCESSFUL
  Version         =                      3.4
@@ -317,6 +317,6 @@ Energia consumida em Joules:   82.50968
  npb@nas.nasa.gov
 
 
-Tempo de execucao em segundos: 18.36284
-Energia consumida em Joules:   64.66597
-sex jun 14 16:41:33 -03 2019
+Tempo de execucao em segundos: 18.75945
+Energia consumida em Joules:   69.11175
+sex jun 14 20:20:30 -03 2019
