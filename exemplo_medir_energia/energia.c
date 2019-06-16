@@ -35,7 +35,7 @@ void detect_cpu(void);
 void detect_packages(void);
 
 /****** RAPL UTILS ******/
-void rapl_init_()
+void rapl_init()
 {
   /*Initialization of RAPL */
   detect_cpu();
@@ -98,7 +98,7 @@ void detect_packages(){
 }
 
 /* Function used by the Intel RAPL to store the actual value of the hardware counter*/
-void start_rapl_sysfs_(){
+void start_rapl_sysfs(){
         int i,j;
         FILE *fff;
         for(j=0;j<total_packages;j++) {
@@ -148,7 +148,7 @@ void start_rapl_sysfs_(){
 }
 
 /* Function used by the Intel RAPL to load the value of the hardware counter and returns the energy consumption*/
-void end_rapl_sysfs_(double *energia){
+double end_rapl_sysfs(){
         int i, j;
         FILE *fff;
         double total=0;
@@ -176,6 +176,6 @@ void end_rapl_sysfs_(double *energia){
                         }
                 }
         }
-        *energia = total;
+        return total;
 }
 
